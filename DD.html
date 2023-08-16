@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Driver Details</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      body{
+        background-image: url(bg.jpg); 
+      background-size:cover ;    }
+        h1 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  /* margin: 0 auto;
+  max-width: 400px; */
+  
+    background-color:transparent;
+    padding:5px 40px;
+    max-width:400px;
+    margin:66px auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1);
+
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  border: 2px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+input[type="submit"]:hover{
+  background-color: rgb(56, 91, 3);
+}
+header {
+    /* background-color: #c24646; */
+  color: #fff;
+  padding: 11px;
+  /* display: flex; */
+  /* align-items: center; */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: bisque */
+}
+
+.logo img {
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 0 10px;
+}
+ul li a{
+  color: black;
+  text-decoration: none;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 20px 20px 10px 1px rgba(0,0,0,0.1);
+}
+a:hover{
+  /* background-color: rgb(255, 255, 255); */
+ /* color: rgb(20, 0, 147); */
+ font-size:20px;
+ /* text-decoration: underline; */
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 56px;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    background-color: #09081a;
+}
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+         <a href="home.html"> <img src="logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="business.html">For Business</a></li>
+          <li><a href="ourdriver.html">Our Drivers</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form  action="det.php" method="post">
+     <h1>Driver Details</h1>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age"><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone"><br>
+
+      <label for="license">License Number:</label>
+      <input type="text" id="license" name="license"><br>
+
+      <label for="experience">Experience:</label>
+      <input type="text" id="experience" name="experience"><br>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location"><br>
+
+      <input type="submit" value="Submit">
+    </form>
+    <footer>
+      <p>&copy; 2023 Driver Hiring Website. All Rights Reserved.</p>
+      <div class="foot">
+          <p>Email us:<a href="
+              mailto:gagandeepu789@gmail.com">gagandeepu789@gmail.com,</a></p><a href="mailto:darshanbshashi@gmail.com">darshanbshashi@gmail.com</a></p>
+              <p>phone: +917892058295, +918317499540</p>
+              <p>Address:hassan,karnataka</p>
+      </div>
+  </footer>
+  <!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDHjUoHIPav4BCIrr8akoerBBf_8hDFojY",
+      authDomain: "driver4u-597c1.firebaseapp.com",
+      projectId: "driver4u-597c1",
+      storageBucket: "driver4u-597c1.appspot.com",
+      messagingSenderId: "123596925016",
+      appId: "1:123596925016:web:bc55802eadcc6ef680c22d",
+      measurementId: "G-5YQ8VLF6N5"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+     -->
+    
+  </body>
+  </html>
+  

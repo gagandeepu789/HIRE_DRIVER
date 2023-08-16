@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attractive Navigation Bar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo {
+	flex-basis: 20%;
+}
+
+.logo img {
+	display: block;
+	max-width: 100%;
+}
+
+nav {
+	flex-basis: 80%;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: #ccc;
+	color: #333;
+}
+
+main {
+	margin: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+section h1 {
+	margin-top: 0;
+}
+
+footer {
+	background-color: #ccc;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+}
+    </style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="dlogo.png" alt="Logo"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h1>Welcome to our website</h1>
+			<p>We offer a wide range of services to meet your needs. Contact us today to learn more.</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Attractive Navigation Bar. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>

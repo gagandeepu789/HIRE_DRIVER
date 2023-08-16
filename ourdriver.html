@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Drivers - Driver Hiring Company</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Kanit:ital,wght@1,100&family=Satisfy&display=swap" rel="stylesheet">
+	
+    <style>
+		body{
+			 /* background-image: url(bg7.jpg); */
+			 background-image: url(bg5.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  max-width: 100%;
+  min-width: 10%;
+			
+			 /* background-color: #bee4e2; */
+
+		}
+		header{
+			padding: 25px;
+			/* background-color: #c24646; */
+		}
+        nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.logo img {
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 0 10px;
+}
+        body {
+	font-family: Arial, sans-serif;
+	/* font-family: 'Encode Sans', sans-serif; */
+	margin: 0;
+	padding: 0;
+}
+ul li a {
+  color: rgb(4, 3, 3);
+  text-decoration: none;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  box-shadow: 20px 20px 10px 1px rgba(0,0,0,0.1);
+}
+ a:hover{
+  /* background-color: rgb(255, 255, 255); */
+ /* color: rgb(20, 0, 147); */
+ font-size:20px;
+ text-decoration: underline;
+
+}
+
+
+
+main {
+	margin: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+.driver {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+.driver-image {
+	flex-basis: 30%;
+	margin-right: 20px;
+}
+
+.driver-image img {
+	display: block;
+	max-width: 100%;
+	height: 130px;
+    width: 243px;
+}
+
+.driver-info {
+	flex-basis: 70%;
+	background-color: azure;
+}
+
+footer {
+	color: white;
+	font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    background-color: #09081a;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+
+}
+.button{
+	display: inline-block;
+    background-color: rgb(192 255 222);
+    color: rgb(1, 0, 0);
+    padding: 10px 20px;
+    border: 2px #09081a;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review {
+	background-color: wheat;
+	width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 80px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 10px 18px 20px #a5dbd0;
+    
+}
+.review:hover{
+	transform: scale(1.05);
+}
+
+.review h4 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1{
+	text-align: center;
+	font-family: 'Encode Sans', sans-serif;
+	background-color: aquamarine;
+	
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+	margin: auto;
+  width: 900px;
+  padding: 20px;
+  background-color: #72ebaf;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 28px;
+ 
+}
+
+input[type="text"],
+select
+ {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+#review {
+
+     width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 10px 23px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+  align-items: center;
+}
+.reviews{
+	border: 5px red;
+}
+
+                .reviews-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reviews-slider {
+	width: 1000px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.review {
+  width: 80%;
+  min-width: 300px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.review-rating {
+  font-size: 24px;
+  color: #ffc107;
+}
+
+.star {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+            </style>
+
+    </style>
+</head>
+<body>
+	<header>
+        <nav>
+          <div class="logo">
+            <a href="home.html"> <img src="logo.png" alt="Logo"></a>
+          </div>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="business.html">For Business</a></li>
+            <li><a href="ourdriver.html">Our Drivers</a></li>
+          </ul>
+        </nav>
+      </header>
+
+	<main>
+		<section>
+			<h2>Meet Our <span style="color:rgb(6, 173, 240) ;font-size: larger;">Verified</span> Drivers</h2>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver1.jpeg" alt="Driver 1">
+				</div>
+				<div class="driver-info">
+					<h3>Chethana B G</h3>
+					<p><strong>Experience:</strong> 5 years</p>
+					<p><strong>Skills:</strong> Defensive driving, GPS navigation, excellent communication</p>
+					<p><strong>Availability:</strong> Full-time</p>
+					<p><strong>Contact:</strong> 786778664</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver2.jpeg" alt="Driver 2">
+				</div>
+				<div class="driver-info">
+					<h3>B R Naveen Kumar</h3>
+					<p><strong>Experience:</strong> 5 years</p>
+					<p><strong>Skills:</strong> Safe driving, customer service, vehicle maintenance</p>
+					<p><strong>Availability:</strong> Part-time</p>
+					<p><strong>Contact:</strong> 7892345687</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver3.jpeg" alt="Driver 3">
+				</div>
+				<div class="driver-info">
+					<h3>Praveena K S</h3>
+					<p><strong>Experience:</strong> 4 years</p>
+					<p><strong>Skills:</strong> Safe driving,vehicle maintenance</p>
+					<p><strong>Availability:</strong> Part-time</p>
+					<p><strong>Contact:</strong> 6356768756</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver4.jpeg" alt="Driver 4">
+				</div>
+				<div class="driver-info">
+					<h3>Chethana S</h3>
+					<p><strong>Experience:</strong>8 years</p>
+					<p><strong>Skills:</strong> Defensive driving, GPS navigation, excellent communication</p>
+					<p><strong>Availability:</strong> Full-time</p>
+					<p><strong>Contact:</strong> 786778664</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver5.jpeg" alt="Driver 5">
+				</div>
+				<div class="driver-info">
+					<h3>JEEVAN H V</h3>
+					<p><strong>Experience:</strong> 2 years</p>
+					<p><strong>Skills:</strong> Safe driving, vehicle maintenance</p>
+					<p><strong>Availability:</strong> Part-time</p>
+					<p><strong>Contact:</strong> 6361304523</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver6.jpeg" alt="Driver 6">
+				</div>
+				<div class="driver-info">
+					<h3>PRAJWAL P B</h3>
+					<p><strong>Experience:</strong> 1 year</p>
+					<p><strong>Skills:</strong> Safe driving</p>
+					<p><strong>Availability:</strong> Part-time</p>
+					<p><strong>Contact:</strong>9663294218</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver7.jpeg" alt="Driver 7">
+				</div>
+				<div class="driver-info">
+					<h3>ANAND L A</h3>
+					<p><strong>Experience:</strong> 2 years</p>
+					<p><strong>Skills:</strong> Safe driving</p>
+					<p><strong>Availability:</strong> Part-time</p>
+					<p><strong>Contact:</strong> 7019242553</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver8.jpeg" alt="Driver 8">
+				</div>
+				<div class="driver-info">
+					<h3>RANGE GOWDA B N</h3>
+					<p><strong>Experience:</strong> 15 years</p>
+					<p><strong>Skills:</strong> Safe driving, customer service, vehicle maintenance, most experienced</p>
+					<p><strong>Availability:</strong> full-time</p>
+					<p><strong>Contact:</strong>  7899348805</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+			<div class="driver">
+				<div class="driver-image">
+					<img src="driver9.jpeg" alt="Driver 9">
+				</div>
+				<div class="driver-info">
+					<h3>SRUJAN K</h3>
+					<p><strong>Experience:</strong> 2 years</p>
+					<p><strong>Skills:</strong> Safe driving, customer service</p>
+					<p><strong>Availability:</strong> full-time</p>
+					<p><strong>Contact:</strong> 9353395289</p>
+					<a href="login.php" class="button">Book Now!</a>
+				</div>
+			</div>
+		</section>
+		<h1>user reviews</h1>
+
+
+<div class="reviews-container">
+    <div class="reviews-slider">
+      <div class="review">
+        <div class="review-header">
+          <h3 class="review-name">Kiran</h3>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="review-content">
+          <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, sapien eget blandit congue, magna velit dignissim mauris, nec consectetur velit risus id neque.</p>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-header">
+          <h3 class="review-name">Naveen</h3>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="review-content">
+          <p class="review-text">Nulla facilisi. Nullam non justo nec arcu mollis ornare eu id diam. Suspendisse euismod, sapien vel vehicula fermentum, lectus quam viverra tortor, id laoreet metus lorem a eros.</p>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-header">
+          <h3 class="review-name">Jane Smith</h3>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="review-content">
+          <p class="review-text">Nulla facilisi. Nullam non justo nec arcu mollis ornare eu id diam. Suspendisse euismod, sapien vel vehicula fermentum, lectus quam viverra tortor, id laoreet metus lorem a eros.</p>
+        </div>
+      </div>
+      <div class="review">
+        <div class="review-header">
+          <h3 class="review-name">Jane Smith</h3>
+          <div class="review-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="review-content">
+          <p class="review-text">Nulla facilisi. Nullam non justo nec arcu mollis ornare eu id diam. Suspendisse euismod, sapien vel vehicula fermentum, lectus quam viverra tortor, id laoreet metus lorem a eros.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+		
+	</main>
+	<form method="post"  action="review.php">
+		<h1>review us:)</h1>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"placeholder="name" required style="width: 891px; height: 58px;">
+	  
+		<label for="rating">Rating:</label>
+		<select id="rating" name="rating" required style="width: 891px; height: 58px;font-size: 23px;">
+		  <option value="">Select a rating</option>
+		  <option value="1">1 star</option>
+		  <option value="2">2 stars</option>
+		  <option value="3">3 stars</option>
+		  <option value="4">4 stars</option>
+		  <option value="5">5 stars</option>
+		</select>
+	  
+		<label for="review">Review:</label>
+		<textarea id="review" name="review" placeholder="your opinion...	"required style="width: 891px; height: 223px;"></textarea>
+	  
+		<button type="submit" style="align-items:center">Submit </button>
+	  </form>
+
+	<footer>
+		<p>&copy; 2023 Driver Hiring Website. All Rights Reserved.</p>
+		<div class="foot">
+			<p>Email us:<a href="
+				mailto:gagandeepu789@gmail.com">gagandeepu789@gmail.com,</a></p><a href="mailto:darshanbshashi@gmail.com">darshanbshashi@gmail.com</a></p>
+				<p>phone: +917892058295, +918317499540</p>
+				<p>Address:hassan,karnataka</p>
+		</div>
+	</footer>
+</body>
+</html>

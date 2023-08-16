@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+            form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, select, textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+        </style>
+    </head>
+        <body>
+      
+<form method="post" action="submit-feedback.php">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="rating">Rating:</label>
+  <select id="rating" name="rating" required>
+    <option value="">Select a rating</option>
+    <option value="1">1 star</option>
+    <option value="2">2 stars</option>
+    <option value="3">3 stars</option>
+    <option value="4">4 stars</option>
+    <option value="5">5 stars</option>
+  </select>
+  
+  <label for="feedback">Feedback:</label>
+  <textarea id="feedback" name="feedback" required></textarea>
+  
+  <button type="submit">Submit</button>
+</form>
+      
+</body>
+   
+</html>

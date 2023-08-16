@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookYourDriver</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        
+        </div>
+    
+    
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="aboutus.html">About us</a>
+    <a href="business.html">Business</a>
+    <a href="ourdriver.html ">Our Drivers</a>
+    
+  </div>
+</div>
+  
+  <div id="main">
+   
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+  </div>
+
+      
+
+
+
+    <div class="booking-form">
+        <div class="formheader"><h3>Driver Booking Details</h3></div>
+        <form action="book.php" method="post" target="_parent">
+            <label for="name" >Name</label>
+            <input type="text" id="name" name="name" placeholder="Name"required >
+         
+            <label for="contact">Contact(10 digits)</label>
+            <input type="text" id="contact" placeholder="9xxxxxxxx1" name="contact">
+            <label for="driver">Driver</label>
+            <select name="driver"  id="driver" required >
+
+                    <option value="" >Select-Driver</option>
+                    <option value="ANAND L A B">ANAND L A(anandla7892@gmail.com)</option>
+                    <option value="SRUJAN K">SRUJAN K(srujankgowda07@gmail.com)</option>
+                    <option value="Chethana S">Chethana S(chethangeetha9986@gmail.com)</option>
+                    <option value="Gagan KK">GAGAN (gagandeepu789@gmail.com)</option>
+                    <option value="Darshan bs">Darshan (darshanbshashi@gmail.com)</option>
+                    <option value="JEEVAN H VS">JEEVAN H V(barathbarath132@gmail.com)</option>
+                    <option value="Chethana_B_ G">Chethana B G</option>
+                    <option value="B R Naveen Kumar">B R Naveen Kumar</option>
+                    <option value="Praveena K S">Praveena K S</option>
+
+                    <option value="PRAJWAL P B">PRAJWAL P B</option>
+                   
+                    <option value="RANGE GOWDA B N">RANGE GOWDA B N</option>
+                    
+
+            </select>
+            <label for="email">email id</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com"required>
+            <label for="service">Service</label>
+            <select name="service" id="service"  >
+
+                    <option value="" >Select-Category</option>
+                    <option value="Outstation">Outstation</option>
+                    <option value="Hourly">Hourly</option>
+                    <option value="Airport">Airport</option>
+                    <!-- <option value="Drink & Drive">Drink & Drive</option> -->
+                    <option value="Commercial">Commercial</option>
+                    <option value="Monthly">Monthly</option>
+
+            </select>
+            <label for="datetime">Date-Time</label>
+            <input type="datetime-local" id="datetime" name="datetime"required>
+            <label for="endtime">End-Time</label>
+            <input type="datetime-local" id="enddate" name="enddate">
+            <label for="Source" >Source</label>
+            <input type="text" id='sourcet' placeholder="source address" name="source">
+            <label for="dest" >Destination</label>
+            <input type="text" id='dest' placeholder="destination address" name="dest">
+            <!-- <label for="hours" ></label>
+            <input type="number" step="1" min="4" name="hours" id="hours" placeholder="minimum 4 hours"> -->
+            <button type="submit" >Book Now</button>
+
+        </form>
+        <!-- <footer>
+          <p>&copy; 2023 Driver Hiring Website. All Rights Reserved.</p>
+          <div class="foot">
+              <p>Email us:<a href="
+                  mailto:gagandeepu789@gmail.com">gagandeepu789@gmail.com,</a></p><a href="mailto:darshanbshashi@gmail.com">darshanbshashi@gmail.com</a></p>
+                  <p>phone: +917892058295, +918317499540</p>
+                  <p>Address:hassan,karnataka</p>
+          </div>
+      </footer> -->
+      
+      
+      <script>
+        var selectElement = document.getElementById("driver");
+        selectElement.addEventListener("change", function() {
+          var selectedOption = selectElement.options[selectElement.selectedIndex];
+          var selectedValue = selectedOption.value;
+          var selectedText = selectedOption.text;
+          alert(selectedValue+" is selected");
+        });
+      </script>
+    </div>
+   
+    <script>
+        
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+       
+</body>
+</html>
+<!--
+<?php
+include "Book.php";
+?>-->
